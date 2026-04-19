@@ -1,0 +1,71 @@
+
+Comandos Git
+https://comandosgit.github.io/
+
+
+
+echo "# Teste-aula" >> README.md
+git init
+touch README.md
+git status
+git add README.md
+git commit -m "primeiro commit"
+git add .
+git branch -M main
+git remote add origin https://github.com/DeboraPascoarelli/Teste-aula.git
+git push -u origin main
+
+-- Para fazer o Push (empurrar para o GitHub!)
+git remote add origin https://github.com/DeboraPascoarelli/Teste-aula.git
+git branch -M main
+git push -u origin main
+
+clear = limpar terminal
+
+
+------- inserindo novo arquivos
+git add .
+git status
+git commit -m "pasta add"
+git push -u origin main
+
+
+
+outras opções do ADD.
+git add nome_do_diretorio/
+git add *.txt
+
+Resumo das opções principais:
+git add .: Adiciona todos os arquivos do diretório atual (modificados e novos).
+git add nome_do_arquivo: Adiciona um arquivo espec�fico.
+git add -u: Adiciona apenas arquivos já rastreados que foram modificados.
+git add -A ou git add --all: Adiciona todos os arquivos (novos e modificados).
+git add -p: Adiciona partes de arquivos (modo interativo).
+git add -i: Modo interativo para escolher alterações específicas.
+
+
+
+Deletar repositório local
+rm -rf .git
+
+
+Isso excluirá? o repositório Git e todo o histórico associado, mas manterá os arquivos do projeto na pasta.
+
+
+
+
+Comandos git Clone
+
+
+Link de Documentação
+https://git-scm.com/docs/git-clone/pt_BR
+
+
+git clone + URL do repo
+
+Clonar com Autenticação via HTTPS (Usuário e Token Pessoal)
+Se estiver usando HTTPS, você precisará de um Personal Access Token (PAT) no lugar da senha.
+
+Criar token de acesso
+git clone https://meu-usuario:meu-token@github.com/meu-usuario/meu-repo.git
+
