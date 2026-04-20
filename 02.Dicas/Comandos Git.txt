@@ -24,9 +24,10 @@ clear = limpar terminal
 
 
 ------- inserindo novo arquivos
+git status
 git add .
 git status
-git commit -m "pasta add"
+git commit -m "pasta adicionada"
 git push -u origin main
 
 
